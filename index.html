@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0"  >
+	<link rel="stylesheet" type="text/css" href="CSS/Vendors/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Vendors/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Vendors/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/trainingU.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet"> 
+	<script
+ src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  
+  	<script src="https://cdn.rawgit.com/vinayakjadhav/jR3DCarousel/v0.0.8/dist/jR3DCarousel.min.js"></script>
+  
+  	<script src="JS/cubeTransition.js"></script>
+  	<script src="JS/mousewheel.js"></script>
+	<script src="JS/jquery.touchSwipe.js"></script>
+
+  
+	<script type="text/javascript" src="JS/trainingU.js"></script>
+
+	<title>TrainingU</title>
+</head>
+
+
+<body class="grid">
+	
+	<!--   *************   SECTION NAV   **************  
+	      
+	**************************************************      -->
+	
+	
+	<div class="wrapper">
+	
+		<header>
+		<a id="brandlogo" href="index.html">TrainingU</a>
+		<br>
+		<br>
+			<nav id="nav-main">
+				<ul>
+					<li><a href="#sect-2">Training</a></li>
+					<li><a href="#sect-3">Your Coach</a></li>
+					<li><a href="#sect-4">Testimonies</a></li>
+					<li><a href="#sect-5">Prices</a></li>
+					<li><a href="#sect-6">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div id="nav-trigger">
+				<span>Menu</span>
+			</div>
+
+			<nav id="nav-mobile"></nav>
+		</header>
+		
+	</div><!-- wrapper -->
+
+	
+    <!--   *************   SECTION 1    **************  
+			      
+	**************************************************       -->	
+	
+	<section id="sect-1">
+		<div class="row">
+			<div class="slider">
+				<div class="slide active-slide"> <!-- #1 slide -->
+					<div class="slide-container title" id="sport-1">
+						<h1>Get in control, your body deserve it.</h1>
+						<button class="btn-sentence"><h2><a href="#sect-6">Quit that fat!</a></h2></button>	
+					</div>
+				</div>
+				
+				<div class="slide"> <!-- #2 slide -->
+					<div class="slide-container title" id="sport-2">
+						<h1>The help you need to achieve your best.</h1>
+					</div>
+				</div>
+				
+				<div class="slide"> <!-- #3 slide -->
+					<div class="slide-container title" id="sport-3">
+						<h1>Strech your limits</h1>
+					</div>
+				</div>
+				
+			</div><!-- .slider -->		
+		</div><!-- .row -->
+		
+		<div class="row">
+			<div class="slider-nav">
+				<a href="#sect-" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+				<ul class="slider-dots">
+					<li class="dot active-dot">&bull;</li>
+					<li class="dot">&bull;</li>
+					<li class="dot">&bull;</li>
+				</ul>
+				<a href="#sect-" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+			</div><!-- .slider-nav -->
+		</div><!-- .row -->	
+	</section><!-- #sect-1 -->
+	
+	
+
+	<!--   *************   SECTION 2   CUBE 3D **************  
+			      
+	**************************************************       -->
+	
+	<section id="sect-2">
+		<div>
+			<h2 class="sectTitle">Training Programs</h2>
+		</div>
+		<div class="row">
+			<div id="cubeContainer">
+				<div id="cubeTransition">
+					<div class="page1"><h2>Muscle gain</h2></div>
+					<div class="page2"><h4>Create a strong body. Strengthen your muscle to burn more calories. This is the secret to your weight loss! Plus you will have a tonic body.</h4></div>
+					<div class="page3"><h2>Physical preparation</h2></div>
+					<div class="page4"><h4>Condition your body for a special event (fitness completion, marathon, or any other specific goal). You will perform better with a tailor-made program. </h4></div>
+					<div class="page5"><h2>Cardio training </h2></div>
+					<div class="page6"><h4>Improve your cardiovascular abilities with physical activities like interval training and running.</h4></div>
+					
+					<ul id="bullets"></ul>
+				</div>
+			</div><!-- #cubeContainer -->
+	    </div><!-- .row -->
+	</section><!-- #sect-2 -->
+	
+	
+	<!--   *************   SECTION 3   COACH  **************  
+			      
+	********************************************************       -->
+	
+	<section id="sect-3" class="wrapper">
+		<div><h2 class="reversed-sectTitle">Your Coach</h2></div>
+		<div class="row">
+            <div class="col span-4-of-12">
+                <img id="mrcoach" src="IMAGES/fit-1868629_1280.jpg" alt="coach image">
+            </div>
+            <div class="col span-8-of-12">
+                <h2 class="paraText">Hi I'm Raj!</h2>
+                <br>
+                <p class="paraText">
+                I am here to help you reach your fitness goal. I will support your during every step of your body transformation. 
+    Passionate about sport since I was 4 years old, I have played  basketball since then, I have took Hip Hop class during 4 years, and judo classes during 12 years. With my experience and love for sport I will motivate you to excel !
+                </p><br>
+                <p class="paraText"><strong>How I am qualified to help you? </strong>
+    I have completed a Level 4 Advanced Personal Trainer &amp; Life Coach from TrainFitness. I keep myself update with the lastest studies and improvement in the fitness world to deliver the best service to you.
+                </p>
+            </div>
+	    </div><!-- .row-->	
+	</section><!-- #sect-3 -->
+	
+   
+    <!--   ************   SECTION 4   RESULT  ***************  
+			      
+	**************************************************    -->
+	
+    <section id="sect-4">
+		<div class=" wrapper ">
+			<div>
+				<h2 class="reversed-sectTitle">What you will get</h2>
+			</div>
+        </div><!-- wrapper -->
+        
+        <div class="boxes">
+           <div class="grid-box">
+                <div class="oneBox" id="box-one">
+                    <div class="box-content"> OPTIMISME
+                        <div class="content-para">ooooooo</div>
+                    </div>
+                </div>            
+                <div class="oneBox" id="box-two">
+                    <div class="box-content">CONFIDENCE</div>
+                </div>   
+                <div class="oneBox" id="box-three">
+                    <div class="box-content">STRENGTH</div>
+                </div>            
+                <div class="oneBox" id="box-four">
+                    <div class="box-content">IMPROVEMENT</div>
+                </div>
+            </div><!-- .grid-->
+        </div><!-- .boxes-->
+    </section><!-- #sect-4 -->
+			
+		
+    <!--   *************   SECTION 5   PRICES  **************  
+			      
+	**************************************************    -->
+	
+	<section id="sect-5">
+		<div><h2 class="sectTitle">Prices</h2></div>
+		<div row>
+			<div class="priceBox col span-4-of-12">    <div class="topHalf">
+                    <h2>Personal Training session </h2>
+                    <h1>50£</h1>
+                    <h2>1 hour</h2>
+				</div>
+				<div class="basePics" id="box1">
+				    <figcaption>
+                        <h3>location: Hotel, Fitness center, Outdoor</h3>
+                    </figcaption></div>
+			</div>
+			
+			<div class="priceBox col span-4-of-12">    
+                <div class="topHalf"><h2>Small Group session </h2>		<h1>35£</h1>
+                    <h2>1 hour</h2>
+				</div>
+				<div class="basePics" id="box2">
+				    <figcaption>
+				        <h3>location: Companies, Hotel, Fitness center, Outdoor</h3>
+				    </figcaption>
+				</div>
+			</div>
+			
+			<div class="priceBox col span-4-of-12">
+			    <div class="topHalf">
+                    <h2>Corporate Event/ seminars</h2><h1>35£</h1>
+                    <h2>1 hour</h2>
+				</div>
+				<div class="basePics" id="box3">
+				    <figcaption>
+				        <h3>location: Companies, Hotel, Fitness center, private rental</h3>
+				    </figcaption>
+				</div>
+			</div>
+		</div>
+		<div class="row slideMe">
+		    <div>
+			    <h4 class="sectTitle">F.A.Q</h4>
+		    </div>
+			<div id=slider>
+				<ul class="faq">
+					<li class="question"><img class="rotateIMG" src="IMAGES/arrow.png"> How long is a training session?</li>
+					<li class="answer"><p>Personal Training &amp; Small Group session: 60 minutes</p>
+					<p>Corporate coaching : depending on the program, ask for a quote.</p>
+					</li>
+					
+					<li class="question"><img class="rotateIMG" src="IMAGES/arrow.png"> I want to have a Small Group session with my friends, can I reserved a session just for us?</li>
+					<li class="answer"><p>Yes if you are at least 4 in the group.</p>
+					</li>
+					
+					<li class="question"><img class="rotateIMG" src="IMAGES/arrow.png"> When are you available?</li>
+					<li class="answer"><p>Monday to Friday: 6AM – 9PM</p><br>
+					<p>Saturday &amp; Sunday: 8AM- 1PM</p>
+					</li>
+					
+					<li class="question"><img class="rotateIMG" src="IMAGES/arrow.png"> What do I need to bring?</li>
+					<li class="answer"><p>You will need an exercise mats, a sport outfit. I will bring all the necessary equipment. </p>
+					</li>
+				</ul>
+			</div><!-- .slider -->
+		</div><!-- .row -->
+	</section><!-- #sect-5 -->
+		
+		
+    <!--   *************   SECTION 6   CONTACT   **************  
+			      
+	**************************************************       -->
+	
+	<section id="sect-6">
+		<div><h2 class="sectTitle">Contact Raj</h2></div>
+		<div class="row">
+			<div class="form">
+				<div><input type="text" placeholder="Name"></div>
+				<div><input type="text" placeholder="Mail"></div>
+				<div><input type="text" placeholder="Phone"></div>
+				<div><textarea placeholder="Message/ ask for a quote"></textarea></div>
+			</div><!-- form -->
+			<div class="rajInfo">
+				<div><p>Phone: 07 456 823 915</p></div>
+				<div><p>contact@rajtrainingU.com</p></div>
+				<div><p>RAJ - Trainning Coach - London</p></div>
+			</div><!-- rajInfo -->
+			<ul class="social-icon">
+				<li><a href="http://www.facebook.com" target="_blank"><img src="IMAGES/Logos_socialMedia/Facebook%20Filled-50.png" alt="facebook logo"></a></li>
+                <li><a href="http://www.twitter.com" target="_blank"><img src="IMAGES/Logos_socialMedia/Twitter-50.png"></a></li>
+				<li><a href="http://www.pinterest.com" target="_blank"><img src="IMAGES/Logos_socialMedia/Pinterest%20Filled-50.png"></a></li>
+                <li><a href="http://www.instagram.com" target="_blank"><img src="IMAGES/Logos_socialMedia/Instagram-50.png"></a></li>
+			</ul><!-- .social-icon -->
+		</div><!-- .row -->	
+	</section><!-- #sect-6 -->
+	
+	
+<script>
+    function animationOut(i){}
+    function animationIn(i){}
+</script>
+
+<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+<!-- PLUGIN -->
+<script src='JS/mousewheel.js'></script>
+<script src="JS/jquery.touchSwipe.js"></script>
+<script src="JS/cubeTransition.js"></script>
+<script src="CSS/Vendors/sticky/jquery.sticky.js"></script>	
+	
+	
+	
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

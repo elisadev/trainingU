@@ -1,0 +1,1008 @@
+/* -------------------------------------------------- */
+				/* BASIC SETUP  */
+/* -------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	background-color: #333;
+}
+
+.wrapper {
+	width: 80%;
+	margin:0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.sectTitle {
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+ .reversed-sectTitle {
+	color: white;
+	margin-top: 0;
+    text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	font-size: 35px;
+}
+
+a, li, ul {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+/* --------------------------------------------------  */
+
+/*                 SECTION 1 - NAVBAR                  */
+
+/* --------------------------------------------------  */
+
+#brandlogo {
+	font-size: 26px;
+	color: #acb8b7;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	margin-top: 15px;
+	font-weight: bold;	
+}
+
+#nav-trigger {
+	display: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+#nav-trigger span {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #37b2ad;
+	color: #333;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#nav-trigger span:after {
+	display: inline-block;
+	margin-left: 10px;
+	width: 1px;
+	height: 2px;
+	content: "";
+	border-left: solid 10px transparent;
+	border-top: solid 10px #fff;
+	border-right: solid 10px transparent;	
+}
+
+#nav-trigger span:hover {
+	background-color: #acb8b7;
+	color: #fff;
+}
+
+#nav-trigger span.open:after {
+	border-left: solid 10px transparent;
+	border-top: none;
+	border-bottom: solid 10px #fff;
+	border-right: solid 10px transparent;
+}
+
+nav {
+	margin-bottom: 30px;
+	font-size: 18px;
+      z-index: 900;
+}
+	
+nav#nav-main {
+	background-color: #37b2ad;
+	padding: 10px 0;
+}
+
+nav#nav-main ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav#nav-main li {
+	display: inline-block;
+	border-right: solid 1px #37b2ad;
+	padding: 0 5px;
+}
+
+nav#nav-main li:last-child {
+	border-right: none;
+}
+
+nav#nav-main a {
+	display: block;
+	color: #333;
+	color: ghostwhite;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav#nav-main a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+nav#nav-mobile {
+	position: relative;
+	display: none;
+}
+
+nav#nav-mobile ul {
+	display: none;
+	list-style-type: none;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #37b2ad;
+}
+
+nav#nav-mobile li {
+	display: block;
+	padding: 5px 0;
+	margin: 0 5px;
+	border-bottom: solid 1px white;	
+}
+
+nav#nav-mobile li:last-child {
+	border-bottom: none;
+}
+
+nav#nav-mobile a {
+	display: block;
+	color: #333;
+	color: ghostwhite;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav#nav-mobile a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+
+/**************  MEDIA QUERIES SECTION 1 NAVBAR ******************/
+
+@media all and (max-width: 1000px) {
+	#nav-trigger {
+		display: block;
+		font-size: 12px;
+	}
+	
+	nav#nav-main {
+		display: none;
+	}
+	
+	nav#nav-mobile {
+		display: block;
+	}
+}
+
+
+/* --------------------------------------------------  */
+
+/*                 SECTION 1 - HOME                    */
+
+/* --------------------------------------------------  */
+
+#sect-1 {
+	background-size: cover;
+	height: 600px;
+	clear: both;
+	overflow: hidden;
+}
+
+.title {
+	color: white;
+	text-align: center;
+	padding-top: 90px;
+	font-size: 22px;
+}
+
+#sport-3.title {color: #0cfff6;}
+
+
+.btn-sentence {
+	margin-top: 25px;
+	background-color: #37b2ad;
+	border-radius: 3px;
+	border: 1px solid #37b2ad;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.btn-sentence a {
+	color: #333;
+}
+
+.btn-sentence:hover {
+	background-color: #acb8b7;
+}
+
+.btn-sentence:hover a {
+	color: white;
+}
+
+
+/**************  MEDIA QUERIES SECTION 1 HOME ******************/
+
+@media all and (min-width: 800px) {
+	
+	.title {
+        color: #fff;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 32px;	
+	}
+	
+	#sect-1 {
+        height: 600px;
+        clear: both;
+		overflow: hidden;
+	}
+}
+
+/* SLIDER HOME */
+.slide-container {
+	width: auto;
+	height: 550px;
+}
+
+/* Carousel */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide {
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-img {
+	text-align: right; 
+}
+
+.slider-nav {
+  	text-align: center;
+  	margin-top: 50px;
+	margin-bottom: 50px;
+	clear: both;		
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #37b2ad;
+}
+
+#sport-1 {
+	background-image: url(../IMAGES/dumbbell-1966247_1280.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#sport-2 {
+	background-image: url(../IMAGES/adult-1867743_1920.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#sport-2.title {
+	color: #333;
+}
+
+#sport-3 {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(150, 150, 150, 0.5)), url(../IMAGES/karate-1343889_1920.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+/* --------------------------------------------------  */
+
+/*               SECTION 2 - TRAINING PROGRAM          */
+
+/* --------------------------------------------------  */
+
+#sect-2 {
+	background-color: #f2f2f2;
+	height: 700px;
+    clear: both;
+}
+
+#cubeContainer {
+	overflow: hidden;
+	height: 550px;	
+}
+
+#cubeTransition {
+	position: relative;
+	margin: auto;
+	width: 90%;
+	height: 60%;
+	margin-top: 50px;
+	-webkit-perspective: 400px;
+	perspective: 400px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+#cubeTransition div {
+	min-height: 100%;
+	width: 100%;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	font-size: 2em;
+	color: #fff;
+	visibility: hidden;
+	transition:opacity 5ms;
+}
+
+#cubeTransition h2 {
+	position: relative;
+	top: 60px;
+	margin: 0;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.1 );
+}
+
+#cubeTransition h4 {
+	position: relative;
+	top: 40px;
+	font-size: 24px;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+}
+
+.page1 {
+	background-image: url(../IMAGES/StockSnap_YM9JY14TSH.jpg);
+	background-size: cover;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.page2 {
+	background: #A8A8A8;
+}
+
+.page3 {
+	background-image:  url(../IMAGES/jumpBox.jpg);
+	background-size: cover;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.page4 {
+	background: #D0D0D0;
+}
+
+.page5 {
+	background-image:  url(../IMAGES/lady-1822459_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+
+.page6 {
+	background:#888888;
+}
+
+.visible {
+	visibility: visible !important;
+}
+
+.rotateCubeTopOut {
+	transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	animation: rotateCubeTopOut .6s both ease-in;
+	-webkit-animation: rotateCubeTopOut .6s both ease-in;
+}
+
+.rotateCubeTopIn {
+	transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+	animation: rotateCubeTopIn .6s both ease-in;
+	-webkit-animation: rotateCubeTopIn .6s both ease-in;
+}
+
+.rotateCubeBottomOut {
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	-webkit-animation: rotateCubeBottomOut .6s both ease-in;
+	animation: rotateCubeBottomOut .6s both ease-in;
+}
+
+.rotateCubeBottomIn {
+	transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: rotateCubeBottomIn .6s both ease-in;
+	animation: rotateCubeBottomIn .6s both ease-in;
+}
+
+@keyframes rotateCubeTopOut {
+	50% {
+		animation-timing-function: ease-out;
+		transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+	}
+
+	100% {
+		opacity: .3;
+		transform: translateY(-100%) rotateX(90deg);	
+	}
+	
+}
+
+@-webkit-keyframes rotateCubeTopOut {
+	50% {
+		-webkit-animation-timing-function: ease-out;
+		-webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+	}
+
+	100% {
+		opacity: .3;
+		-webkit-transform: translateY(-100%) rotateX(90deg);	
+	}
+}
+
+@keyframes rotateCubeTopIn {
+	0% {
+		opacity: .3;
+		transform: translateY(100%) rotateX(-90deg);
+	}
+
+	50% {
+		animation-timing-function: ease-out;
+		transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+	}
+}
+
+@-webkit-keyframes rotateCubeTopIn {
+	0% {
+		opacity: .3;
+		-webkit-transform: translateY(100%) rotateX(-90deg);
+	}
+
+	50% {
+		-webkit-animation-timing-function: ease-out;
+		-webkit-transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+	}
+}
+
+@keyframes rotateCubeBottomOut {
+	50% {
+		animation-timing-function: ease-out;
+		transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+	}
+
+	100% {
+		opacity: .3;
+		transform: translateY(100%) rotateX(-90deg);
+	}
+}
+
+@-webkit-keyframes rotateCubeBottomOut {
+	50% {
+		-webkit-animation-timing-function: ease-out;
+		-webkit-transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+	}
+
+	100% {
+		opacity: .3;
+		-webkit-transform: translateY(100%) rotateX(-90deg);
+	}
+}
+
+@keyframes rotateCubeBottomIn {
+	0% {
+		opacity: .3;
+		transform: translateY(-100%) rotateX(90deg);
+	}
+
+	50% {
+		animation-timing-function: ease-out;
+		transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+	}
+}
+@-webkit-keyframes rotateCubeBottomIn {
+	0% {
+		opacity: .3;
+		-webkit-transform: translateY(-100%) rotateX(90deg);
+	}
+
+	50% {
+		-webkit-animation-timing-function: ease-out;
+		-webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+	}
+}
+
+#bullets {
+	position: absolute;
+	width: 100%;
+	bottom: -60px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: black;
+}
+
+#bullets li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 3px;
+	background: rgba( 255, 255, 255, 0.5 );
+	box-shadow: 0px 0px 4px rgba( 0, 0, 0, 0.2 );
+	cursor: pointer;
+}
+
+#bullets li:hover {
+	background: rgba( 255, 255, 255, 0.8 );
+}
+
+#bullets li.active {
+	cursor: default;
+	background: #fff;
+}
+
+
+/*******     MEDIA QUERIE SECTION 2     ********/
+
+@media screen and (min-width: 770px) and (max-width: 1009px){
+	#cubeTransition {
+		width: 40%;
+		height: 75%;
+	}
+    
+	#cubeTransition h4 {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 1010px) {
+	#cubeTransition {
+		width: 40%;
+		height: 75%;
+	}
+    
+	#cubeTransition h4 {
+		font-size: 34px;
+	}
+}
+
+
+/* --------------------------------------------------  */
+
+/*               SECTION 3 - YOUR COACH                */
+
+/* --------------------------------------------------  */
+
+#sect-3 {
+	height: 1190px;
+	clear: both;
+}
+
+#sect-3 .span-4-of-12 {
+    margin-bottom: 25px;
+}
+
+#mrcoach {
+	width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.paraText{
+	color: #fff;
+	font-size: 18px;
+    line-height: 1.5;
+}
+
+/*******     MEDIA QUERIE SECTION 3     ********/
+
+@media only screen and (max-width: 710px) {
+    #sect-3 {
+        height: 1100px;
+    }
+    
+    #sect-3 .span-8-of-12, #sect-3 .span-4-of-12 {
+        width: 100%;
+    }
+    
+    #mrcoach {
+        height: 70%;
+         width: 70%;
+    }
+}
+
+@media only screen and (min-width: 711px) {
+    #sect-3 .span-8-of-12 {
+        padding-left: 45px;
+    }
+    
+    #sect-3 {height: 630px;}
+}
+
+
+/* --------------------------------------------------  */
+
+/*               SECTION 4 - RESULT               */
+
+/* --------------------------------------------------  */
+
+#sect-4 {
+	height: auto;
+	padding-bottom: 50px;
+	clear: both;
+	overflow: hidden;
+	background-color: #333;	
+}
+
+.sectTitle {
+	font-size: 35px;
+	color: #333;
+}
+
+#box-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.3)), url(../IMAGES/StockSnap_EG7KI8FXPR.jpg);
+}
+
+#box-two {
+    background-image: url(../IMAGES/coast-1834827_1920.jpg);
+}
+
+#box-three {
+    background-image: url(../IMAGES/yogi2.jpg);
+}
+
+#box-four {
+    background-image: url(../IMAGES/no-gluten-bread-1905736_1280.jpg);
+}
+
+.oneBox {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    height: calc(50vh - 24px);
+    min-height: 320px;
+    text-align: center;
+    cursor: default;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.oneBox img {
+    display: block;
+    width: 100%;
+}
+
+.boxes {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1 rem;
+}
+
+.box-content {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    padding-top: 30%;
+}
+
+.content-para {
+    display: none;
+}
+
+#box-one:hover .content-para {
+    opacity: 1;
+    transition: linear 0.5s;
+    text-align: center;
+    color: #1b2c3f;
+    font-size: 20px;
+    padding: 18px;
+    background-color: rgba(155, 205, 205, 0.7);
+    transform: translateY(135px);
+}
+
+@media screen and (min-width: 600px) {
+    .grid-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .oneBox {
+        width: 50%;
+    }
+    
+    .box-content {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .oneBox {
+        width: calc(100% / 2);
+    }
+}
+
+
+/* --------------------------------------------------  */
+
+/*               SECTION 5 - PRICES                    */
+
+/* --------------------------------------------------  */
+
+#sect-5 {
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 90%;
+}
+
+#sect-5 .sectTitle {
+	color: #fff;
+}
+
+.priceBox {
+	height: 350px;
+	background-color: #fff;
+	border-radius: 10px 5px;	
+}
+
+.priceBox h2, .priceBox h1 {
+	color: #333; 
+	text-align: center;	
+    margin-top: 15px;
+}
+
+.priceBox h3 {
+	color: #fff;
+	padding-top: 45px;
+}
+
+.basePics, .topHalf {
+	height: 50%;
+}
+
+.basePics {
+	border-radius: 10px 5px;
+	text-align: center;
+}
+
+.basePics img {
+	width:100%;
+	height:70%;
+}
+
+#box1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.4)), url(../IMAGES/img-retouched/sheRun.jpg);
+	background-size: cover; 
+}
+
+#box2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.6)), url(../IMAGES/weights-1948813_1280.jpg);
+	background-size: cover; 
+}
+
+#box3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.4)), url(../IMAGES/pinkDumbbell.jpg);
+	background-size: cover; 
+}
+
+#sect-5 .span-4-of-12 {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+
+#sect-5 .col:first-child {
+   margin-left: 0;
+}
+
+
+/******* MEDIA QUERIE SECTION 5 ********/
+
+@media only screen and (min-width: 488px) {
+    #sect-5 .col:first-child {
+        margin-left: 1.6%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #sect-5 .col:first-child {
+        margin-left: 0;
+    }
+    
+    #sect-5 .span-4-of-12 {
+        width: 32.26%;
+    }
+}
+
+/*****     FAQ     *****/
+
+.slideMe {
+	clear: both;
+}
+
+#slider {
+	clear: both;
+	background-color: #fff;
+	margin-top: 150px;
+	width: 100%; 
+	margin: auto;	
+}
+
+.faq {
+	margin-top: 50px;
+	padding: 15px;
+}
+
+.faq li {
+	padding: 35px;
+}
+
+.question {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #37b2ad;
+}
+
+.answer {
+	font-size: 18px;
+	background-color: dimgray;
+	color: #fff;
+}
+
+.rotate {
+	transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+
+
+/******* MEDIA QUERIE SECTION 5 FAQ ********/
+
+@media only screen and (min-width: 600px) {
+    #slider {
+        width: 70%;
+    }   
+}
+
+
+/* --------------------------------------------------  */
+
+/*               SECTION 6 - CONTACT                   */
+
+/* --------------------------------------------------  */
+
+#sect-6 {
+	clear: both;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+ #sect-6 .sectTitle {
+	color: white;
+}
+
+.form, .rajInfo, .social-icon {
+	width: 90%;
+	margin: auto;
+}
+
+.form input, .form textarea {
+	width: 100%;
+	margin-bottom: 5px;
+    height: 35px;
+}
+
+.form textarea {
+	height: 150px;
+}
+
+.rajInfo {
+	margin-top: 25px;
+	text-align: center;
+	color: white;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.social-icon li {
+	display: inline;
+	margin-right: 35px;
+}
+
+.social-icon  {
+	margin-top: 50px;
+	text-align: center;
+}
+
+/******* MEDIA QUERIE SECTION 6 ********/
+
+@media only screen and (min-width: 600px) {
+   .form, .rajInfo, .social-icon {
+        width: 60%;
+    }   
+}
+
+
+
+
+
+
+
+
+
