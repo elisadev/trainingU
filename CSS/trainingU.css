@@ -853,7 +853,8 @@ nav#nav-mobile a:hover {
 
 #box2 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.6)), url(../IMAGES/gym.jpg);
-	background-size: cover; 
+	background-size: cover;
+	background-position: bottom;
 }
 
 #box3 {
